@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --blue: hsl(228, 45%, 44%);
+    --white: #fff;
+    --grey: hsl(0, 0%, 20%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+}
+
+body,
+.container,
+.profile-pic,
+.button-card {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: "inter", sans-serif;
+    background-color: var(--off-black);
+    color: var(--white);
+    padding: 1.8rem 3rem;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--dark-grey);
+    padding: 1.4rem;
+    width: 18rem;
+    min-height: 27rem;
+    border-radius: 0.3rem;
+    margin-bottom: 10rem;
+}
+
+.profile-pic {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.profile-pic img {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.8rem;
+}
+
+.title {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.location {
+    color: var(--green);
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 1.1rem;
+}
+
+.self-description {
+    font-size: 0.6rem;
+    margin-bottom: 2rem;
+}
+
+.button-card a {
+    background-color: var(--grey);
+    color: var(--white);
+    padding: 0.6rem 0.8rem;
+    border-radius: 0.4rem;
+    margin-bottom: 0.6rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-align: center;
+    text-decoration: none;
+    transition: backgroud-color 0.5s ease, color 0.5s ease;
+}
+
+.button-card a:hover {
+    background-color: var(--green);
+    color: var(--off-black);
+}
+
+
+.button-card a:focus {
+    outline: 2px solid var(--green);
+}
+
+.attribuition {
+    font-size: 11px;
+    margin-top: 80px;
+}
+
+
+.attribuition a {
+    color: var(--green);
+}
+
+@media only screen and (min-width: 375px) {
+    .container {
+        width: 100%;
+    }
+
+
+    .self-description {
+        font-size: 0.5rem;
+        font-weight: bold;
+    }
+
+
+}
